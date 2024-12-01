@@ -63,3 +63,49 @@ The Knapsack Problem involves:
   - Convergence plot for the DP algorithm.
 
 ---
+
+## Results
+![download](https://github.com/user-attachments/assets/0315a7cc-3f30-4061-a27c-42b916be16f5)
+![Screenshot 2024-12-01 234523](https://github.com/user-attachments/assets/d2def01a-1b60-497b-bce8-d80b17f30b26)
+
+# Results Summary
+
+## Dynamic Programming
+
+- **Maximum Value Achieved**: 4333
+- **Selected Bags**:  
+  The following bag indices (representing the optimal set of items) were chosen to maximize the value without exceeding the knapsack's capacity:  
+  `[100, 99, 96, 95, 91, 90, 89, 87, 84, 83, 80, 78, 77, 76, 74, 73, 69, 67, 66, 65, 63, 62, 61, 60, 59, 58, 57, 56, 54, 53, 51, 50, 48, 47, 46, 45, 44, 42, 40, 38, 37, 36, 34, 33, 32, 31, 29, 28, 27, 25, 24, 21, 20, 19, 16, 15, 11, 9, 8, 6, 5, 4, 3, 2, 1]`
+
+### Key Observations:
+- Dynamic Programming explores all possible combinations to find the optimal solution.
+- The algorithm achieved a significantly higher total value compared to ACO by exhaustively searching the solution space.
+
+---
+
+## Ant Colony Optimization (ACO)
+
+- **Maximum Value Achieved**: 430
+- **Selected Bags**:  
+  The following bag indices were chosen by the ant colony optimization algorithm:  
+  `[10, 19, 47, 61, 65]`
+
+### Key Observations:
+- ACO uses probabilistic decision-making and heuristic search rather than exhaustive exploration.
+- The solution is suboptimal compared to Dynamic Programming but showcases the strengths of ACO in handling large-scale problems quickly and efficiently when exhaustive search is impractical.
+
+---
+
+## Comparison of Approaches
+
+| Feature                     | Dynamic Programming        | Ant Colony Optimization |
+|-----------------------------|----------------------------|--------------------------|
+| **Maximum Value**           | 4333                       | 430                      |
+| **Execution Time**          | Longer due to exhaustive search | Faster due to heuristic-based search |
+| **Scalability**             | Poor for large datasets    | Good for large datasets  |
+| **Deterministic Solution**  | Yes                        | No (probabilistic results) |
+
+Dynamic Programming excels in accuracy, while Ant Colony Optimization demonstrates efficiency in scenarios with larger datasets or more complex constraints.
+
+
+
